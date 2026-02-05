@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Android Apps Study | Empirical Research in Sensitive Domains</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">📱</span>
+                <span>HybridApps Study</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#objectives" class="nav-link">Objectives</a></li>
+                <li><a href="#research-questions" class="nav-link">Research Questions</a></li>
+                <li><a href="#methodology" class="nav-link">Methodology</a></li>
+                <li><a href="#outcomes" class="nav-link">Outcomes</a></li>
+                <li><a href="#references" class="nav-link">References</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Empirical Software Engineering Research</span>
+            <h1>Large-Scale Empirical Study of Hybrid Android Applications in Sensitive Domains</h1>
+            <p class="hero-subtitle">Understanding software development challenges in hybrid mobile applications across healthcare, banking, and public services through repository mining and artifact analysis.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Research Questions</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Methodology Phases</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Open-Source Apps</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Background & Motivation</span>
+                <h2>About This Research</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>What Are Hybrid Android Apps?</h3>
+                    <p>Android hybrid apps combine <strong>native Android components</strong> with embedded web technologies, typically via <strong>WebView-based APIs</strong>. This design choice enables cross-platform, rapid development and is commonly used in domains such as healthcare and banking apps, where mobile access to information and services is critical.</p>
+                    
+                    <h3>The Research Gap</h3>
+                    <p>Prior research has explored the prevalence, characteristics, and security concerns of Android hybrid applications. However, current empirical knowledge remains <strong>fragmented</strong>. Most large-scale studies focus on observable behaviors or architectural properties, while comparatively little attention has been paid to how hybrid app technologies affect the <strong>software development and maintenance process itself</strong>.</p>
+                    
+                    <p>In particular, there is limited understanding of the types of software issues that developers encounter due to hybrid-specific mechanisms such as:</p>
+                    <ul class="feature-list">
+                        <li><span class="icon">⚙️</span> Java–JavaScript interfaces</li>
+                        <li><span class="icon">🔧</span> WebView configuration</li>
+                        <li><span class="icon">🔗</span> Cross-language communication</li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <span class="visual-icon">🔍</span>
+                            <h4>Research Approach</h4>
+                        </div>
+                        <p>Rather than analyzing hybrid applications solely through static or dynamic program analysis, this project emphasizes <strong>repository mining</strong> and <strong>artifact-based empirical methods</strong>.</p>
+                        <div class="data-sources">
+                            <span class="data-badge">Issue Reports</span>
+                            <span class="data-badge">Commit Messages</span>
+                            <span class="data-badge">Development Discussions</span>
+                        </div>
+                    </div>
+                    <div class="visual-card highlight">
+                        <div class="visual-header">
+                            <span class="visual-icon">🎯</span>
+                            <h4>Sensitive Domains Focus</h4>
+                        </div>
+                        <p>Safety- and privacy-critical domains such as <strong>healthcare</strong> and <strong>public services</strong> remain underexplored. These domains are subject to stricter correctness, reliability, and privacy requirements, making hybrid-app-specific issues potentially more impactful.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Work Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Positioning</span>
+                <h2>Related Work</h2>
+            </div>
+            <div class="related-work-content">
+                <p class="lead-text">This project builds on existing empirical and security research on Android hybrid applications, including large-scale studies of Android–web hybridization and analyses of specific hybrid-related risks such as fingerprinting, tracking, and privacy leakage.</p>
+                <div class="positioning-box">
+                    <div class="positioning-icon">💡</div>
+                    <div class="positioning-text">
+                        <h4>Complementary Perspective</h4>
+                        <p>While prior work has provided important insights into the prevalence, architecture, and runtime behavior of hybrid apps, this project adopts a complementary perspective by focusing on <strong>developer-facing artifacts</strong> and <strong>maintenance processes</strong>.</p>
+                    </div>
+                </div>
+                <div class="contribution-box">
+                    <h4>Key Contribution</h4>
+                    <p>The contribution of this project is therefore not the discovery of hybrid app risks in general, but the construction of a <strong>curated dataset</strong> and the <strong>systematic characterization</strong> of hybrid-app-specific development issues in sensitive domains, complementing existing behavioral and architectural studies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Goals</span>
+                <h2>Project Objectives</h2>
+            </div>
+            <div class="objectives-content">
+                <div class="main-objective">
+                    <div class="objective-icon">🎯</div>
+                    <h3>Main Objective</h3>
+                    <p>To <strong>systematically characterize software issues</strong> that arise specifically from hybrid application technologies in Android apps belonging to sensitive domains.</p>
+                </div>
+                <div class="objectives-details">
+                    <div class="objective-card">
+                        <span class="card-number">01</span>
+                        <h4>Build on Existing Research</h4>
+                        <p>Build on existing large-scale studies of hybridization and hybrid-related risks to extend our understanding.</p>
+                    </div>
+                    <div class="objective-card">
+                        <span class="card-number">02</span>
+                        <h4>Mine Development Artifacts</h4>
+                        <p>Focus on mining and analyzing development artifacts to understand real-world developer challenges.</p>
+                    </div>
+                    <div class="objective-card">
+                        <span class="card-number">03</span>
+                        <h4>Understand Impact</h4>
+                        <p>Understand how hybrid mechanisms translate into concrete maintenance, reliability, and security challenges faced by developers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Questions Section -->
+    <section id="research-questions" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Investigation</span>
+                <h2>Research Questions</h2>
+            </div>
+            <div class="rq-grid">
+                <div class="rq-card">
+                    <div class="rq-header">
+                        <span class="rq-label">RQ1</span>
+                        <span class="rq-theme">Frequency</span>
+                    </div>
+                    <h3>How frequently do hybrid-app-specific issues appear in the development histories of Android apps from sensitive domains?</h3>
+                    <div class="rq-focus">
+                        <span>Focus:</span> Quantifying the prevalence of hybrid-related issues
+                    </div>
+                </div>
+                <div class="rq-card">
+                    <div class="rq-header">
+                        <span class="rq-label">RQ2</span>
+                        <span class="rq-theme">Categories</span>
+                    </div>
+                    <h3>What categories of hybrid-specific issues are most commonly reported?</h3>
+                    <div class="rq-examples">
+                        <span>Examples:</span>
+                        <ul>
+                            <li>WebView configuration</li>
+                            <li>Java–JavaScript interfaces</li>
+                            <li>Lifecycle mismatches</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rq-card">
+                    <div class="rq-header">
+                        <span class="rq-label">RQ3</span>
+                        <span class="rq-theme">Manifestation</span>
+                    </div>
+                    <h3>How do hybrid-specific issues manifest in development artifacts such as issue reports and commit messages?</h3>
+                    <div class="rq-focus">
+                        <span>Focus:</span> Understanding how developers document and address issues
+                    </div>
+                </div>
+                <div class="rq-card">
+                    <div class="rq-header">
+                        <span class="rq-label">RQ4</span>
+                        <span class="rq-theme">Domain Comparison</span>
+                    </div>
+                    <h3>How do these issues differ across sensitive domains?</h3>
+                    <div class="rq-examples">
+                        <span>Comparison:</span>
+                        <ul>
+                            <li>Healthcare apps</li>
+                            <li>Public services apps</li>
+                            <li>Other sensitive domains</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scope Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Boundaries</span>
+                <h2>Scope and Assumptions</h2>
+            </div>
+            <div class="scope-content">
+                <div class="scope-grid">
+                    <div class="scope-item">
+                        <div class="scope-icon">📂</div>
+                        <h4>Data Sources</h4>
+                        <p>The study focuses exclusively on Android hybrid applications identified from <strong>open-source repositories</strong> such as F-Droid or GitHub.</p>
+                    </div>
+                    <div class="scope-item">
+                        <div class="scope-icon">🔎</div>
+                        <h4>Hybrid Identification</h4>
+                        <p>Hybrid identification relies on <strong>metadata analysis</strong> and <strong>lightweight heuristics</strong> indicating WebView or hybrid framework usage.</p>
+                    </div>
+                    <div class="scope-item">
+                        <div class="scope-icon">📊</div>
+                        <h4>Analysis Approach</h4>
+                        <p>Issue analysis focuses on <strong>public artifacts</strong> and aims for <strong>breadth and representativeness</strong> rather than exhaustive per-app analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Approach</span>
+                <h2>Methodology</h2>
+            </div>
+            <div class="methodology-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 1: Dataset Construction</h3>
+                        <p>Dataset construction and domain filtering to identify relevant Android hybrid applications from sensitive domains.</p>
+                        <div class="phase-tags">
+                            <span>F-Droid Mining</span>
+                            <span>GitHub Search</span>
+                            <span>Domain Classification</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 2: Repository Mining</h3>
+                        <p>Repository mining and artifact collection, gathering issue reports, commit messages, and development discussions.</p>
+                        <div class="phase-tags">
+                            <span>Issue Extraction</span>
+                            <span>Commit Analysis</span>
+                            <span>Discussion Mining</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 3: Issue Classification</h3>
+                        <p>Identification and classification of hybrid-specific issues using systematic categorization methods.</p>
+                        <div class="phase-tags">
+                            <span>Keyword Filtering</span>
+                            <span>Manual Labeling</span>
+                            <span>Category Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>4</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Phase 4: Empirical Analysis</h3>
+                        <p>Large-scale empirical analysis and reporting to answer the research questions with quantitative and qualitative insights.</p>
+                        <div class="phase-tags">
+                            <span>Statistical Analysis</span>
+                            <span>Qualitative Coding</span>
+                            <span>Cross-Domain Comparison</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes Section -->
+    <section id="outcomes" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Deliverables</span>
+                <h2>Expected Outcomes</h2>
+            </div>
+            <div class="outcomes-grid">
+                <div class="outcome-card">
+                    <div class="outcome-icon">📦</div>
+                    <h3>Curated Dataset</h3>
+                    <p>A curated dataset of hybrid Android applications from sensitive domains, providing a valuable resource for future research.</p>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">🏷️</div>
+                    <h3>Classified Issues</h3>
+                    <p>A classified set of hybrid-app-specific development issues, categorized by type, severity, and domain.</p>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">📈</div>
+                    <h3>Empirical Insights</h3>
+                    <p>Quantitative and qualitative empirical insights into hybrid app development challenges in sensitive domains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Citations</span>
+                <h2>References</h2>
+            </div>
+            <div class="references-list">
+                <div class="reference-item">
+                    <span class="ref-number">[1]</span>
+                    <div class="ref-content">
+                        <p>Tiwari, A., Prakash, J., Gross, S., & Hammer, C. (2020). A large scale analysis of android—web hybridization. <em>Journal of Systems and Software</em>, 170, 110775.</p>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <span class="ref-number">[2]</span>
+                    <div class="ref-content">
+                        <p>Tiwari, A., Prakash, J., Rahimov, A., & Hammer, C. (2023, May). Understanding the impact of fingerprinting in Android hybrid apps. In <em>2023 IEEE/ACM 10th International Conference on Mobile Software Engineering and Systems (MOBILESoft)</em> (pp. 28-39). IEEE.</p>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <span class="ref-number">[3]</span>
+                    <div class="ref-content">
+                        <p>Tiwari, A., Prakash, J., & Hammer, C. (2023, October). Demand-driven information flow analysis of WebView in Android hybrid apps. In <em>2023 IEEE 34th International Symposium on Software Reliability Engineering (ISSRE)</em> (pp. 415-426). IEEE.</p>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <span class="ref-number">[4]</span>
+                    <div class="ref-content">
+                        <p>F-Droid: <a href="https://f-droid.org/en/" target="_blank" rel="noopener">https://f-droid.org/en/</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-avatar">AT</div>
+                    <h3>Abhishek Tiwari</h3>
+                    <p class="contact-role">Principal Investigator</p>
+                    <a href="mailto:abti@mmmi.sdu.dk" class="contact-email">
+                        <span class="email-icon">✉️</span>
+                        abti@mmmi.sdu.dk
+                    </a>
+                    <p class="contact-institution">University of Southern Denmark (SDU)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">📱</span>
+                    <span>HybridApps Study</span>
+                </div>
+                <p class="footer-text">Large-Scale Empirical Study of Hybrid Android Applications in Sensitive Domains</p>
+                <p class="footer-copyright">© 2026 Abhishek Tiwari | University of Southern Denmark</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
